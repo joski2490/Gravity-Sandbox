@@ -132,8 +132,8 @@ export default class Universe {
             acceleration.subtract(b2.position);
             acceleration.normalize();
             acceleration.scale(force/b1.mass);
-            b1.velocity.x -= acceleration.x * dt;
-            b1.velocity.y -= acceleration.y * dt;
+            b1.velocity.x -= acceleration.x * dt * 3.14159;
+            b1.velocity.y -= acceleration.y * dt; * 3.14159
           }
         }
       }
